@@ -6,9 +6,13 @@ $(document).ready(function() {
     for (var i = 1; i < 6; i++) {
       var userInput = $('select[name=question' + i + ']').val();
       answerArray.push(userInput);
-      alert(userInput);
-      alert(answerArray);
-    }
+      // alert(userInput);
+      // alert(answerArray);
+    } //end loop that generates array
+
+    // alert(userInput);
+    alert(answerArray);
+    $(".hideme").show();
 
 
 

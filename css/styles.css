@@ -6,3 +6,17 @@ form {
   max-width: 900px;
   margin: 15px;
 }
+
+.btn-refresh {
+  margin-left: 15px;
+}
+
+.hideme {
+  display: none;
+  margin-top: 20px;
+}
+
+.img-responsive {
+  padding: 5px;
+  max-width: 50%;
+}
