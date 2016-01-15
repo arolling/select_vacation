@@ -15,20 +15,20 @@ $(document).ready(function() {
     // branching decision tree starts here
     console.log(answerArray);
 
-    if (answerArray[2] === "beach" && answerArray[3] === "yes" && answerArray[4] != "summer") {
-      $("#haiti").show();
+    if ((answerArray[0] === "cheap" || answerArray[0] === "thrifty") && answerArray[2] === "beach" && answerArray[3] === "yes" && answerArray[4] != "summer") {
+      $("#haiti").fadeIn();
     } else if (answerArray[0] === "spendy" && answerArray[1] === "long" && answerArray[3] != "no" && answerArray[4] != "summer") {
-      $("#australia").show();
+      $("#australia").fadeIn();
     } else if (answerArray[0] != "cheap" && answerArray[1] != "short" && answerArray[2] === "sights" && answerArray[3] === "no") {
-      $("#milan").show();
-    } else if (answerArray[0] === "cheap" && answerArray[1] != "short" && answerArray[2] != "beach" && answerArray[3] === "no") {
-      $("#montreal").show();
+      $("#milan").fadeIn();
+    } else if ((answerArray[0] === "cheap" || answerArray[0] === "thrifty") && answerArray[1] != "infinity" && answerArray[2] != "beach") {
+      $("#montreal").fadeIn();
     } else if (answerArray[0] === "noBudget" && answerArray[1] === "long" && answerArray[2] === "sights" && answerArray[3] === "no") {
-      $("#beijing").show();
+      $("#beijing").fadeIn();
     } else if ((answerArray[0] === "spendy" || answerArray[0] === "noBudget") && answerArray[1] === "infinity" && answerArray[2] != "events" && answerArray[3] != "no" && answerArray[4] != "summer") {
-      $("#cairo").show();
+      $("#cairo").fadeIn();
     } else {
-      $("#failure").show();
+      $("#failure").fadeIn();
     }
 
     //branching decision tree ends here
