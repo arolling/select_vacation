@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     // alert(userInput);
     // alert(answerArray);
-
+    $(".hideme").hide();
     // branching decision tree starts here
 
     if (answerArray[0] === "1a" && answerArray[1] === "2a" && answerArray[2] === "3b" && answerArray[3] === "4a" && answerArray[4] === "5b") {
@@ -106,7 +106,7 @@ $(document).ready(function() {
     // $("#haiti, #milan").show();
 
 
-
+    answerArray.length = 0;
     event.preventDefault();
   }); //end of submit function
 

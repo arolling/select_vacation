@@ -1,3 +1,12 @@
+body {
+  background-color: #D5DAFF;
+}
+
+.jumbotron {
+  background-color: #8F9974;
+  color: #FFF7BD;
+}
+
 .center-block {
   text-align: center;
 }
