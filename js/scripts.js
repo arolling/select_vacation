@@ -13,18 +13,19 @@ $(document).ready(function() {
     // alert(answerArray);
     $(".hideme").hide();
     // branching decision tree starts here
+    console.log(answerArray);
 
-    if (answerArray[0] === "1a" && answerArray[1] === "2a" && answerArray[2] === "3b" && answerArray[3] === "4a" && answerArray[4] === "5b") {
+    if (answerArray[2] === "beach" && answerArray[3] === "yes" && answerArray[4] != "summer") {
       $("#haiti").show();
-    } else if (answerArray[0] === "1c" && answerArray[1] === "2c" && answerArray[2] === "3b" && answerArray[3] === "4c" && answerArray[4] === "5b") {
+    } else if (answerArray[0] === "spendy" && answerArray[1] === "long" && answerArray[3] != "no" && answerArray[4] != "summer") {
       $("#australia").show();
-    } else if (answerArray[0] === "1b" && answerArray[1] === "2b" && answerArray[2] === "3c" && answerArray[3] === "4b" && answerArray[4] === "5c") {
+    } else if (answerArray[0] != "cheap" && answerArray[1] != "short" && answerArray[2] === "sights" && answerArray[3] === "no") {
       $("#milan").show();
-    } else if (answerArray[0] === "1a" && answerArray[1] === "2b" && answerArray[2] === "3a" && answerArray[3] === "4b" && answerArray[4] === "5a") {
+    } else if (answerArray[0] === "cheap" && answerArray[1] != "short" && answerArray[2] != "beach" && answerArray[3] === "no") {
       $("#montreal").show();
-    } else if (answerArray[0] === "1d" && answerArray[1] === "2c" && answerArray[2] === "3c" && answerArray[3] === "4b" && answerArray[4] === "5c") {
+    } else if (answerArray[0] === "noBudget" && answerArray[1] === "long" && answerArray[2] === "sights" && answerArray[3] === "no") {
       $("#beijing").show();
-    } else if (answerArray[0] === "1c" && answerArray[1] === "2d" && answerArray[2] === "3c" && answerArray[3] === "4c" && answerArray[4] === "5b") {
+    } else if ((answerArray[0] === "spendy" || answerArray[0] === "noBudget") && answerArray[1] === "infinity" && answerArray[2] != "events" && answerArray[3] != "no" && answerArray[4] != "summer") {
       $("#cairo").show();
     } else {
       $("#failure").show();
