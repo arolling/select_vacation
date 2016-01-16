@@ -1,19 +1,20 @@
 $(document).ready(function() {
   var answerArray = [];
   var userInput;
+  var userNameInput;
 
   $('form').submit(function(event) {
     for (var i = 1; i < 6; i++) {
       var userInput = $('select[name=question' + i + ']').val();
       answerArray.push(userInput);
-
     } //end loop that generates array
 
-    // alert(userInput);
-    // alert(answerArray);
-    $(".hideme").hide();
+    var userNameInput = $('input[id=userName]').val();
+    $(".hideme").fadeOut();
     // branching decision tree starts here
-    console.log(answerArray);
+    console.log(userNameInput);
+
+    $("div#answer").html('<h1>' + userNameInput + ', the vacation spot that is the best fit for you is:</h1>')
 
     if ((answerArray[0] === "cheap" || answerArray[0] === "thrifty") && answerArray[2] === "beach" && answerArray[3] === "yes" && answerArray[4] != "summer") {
       $("#haiti").fadeIn();

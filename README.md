@@ -11,7 +11,7 @@ This simple web tool generates a suggestion for a vacation destination based on 
 
 ## Known Bugs
 
-Most of the potential combinations of answers return a negative result.
+Some of the potential combinations of answers return a negative result.
 
 ## Support and contact details
 
